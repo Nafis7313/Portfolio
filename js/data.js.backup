@@ -1,0 +1,727 @@
+// Portfolio Projects Data
+const portfolioProjects = [
+    // BRANDING PROJECTS (7-8 projects)
+    {
+        id: 1,
+        title: "Cafe Branding",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1541424329254-b9d882e86a52?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Brand identity & packaging",
+        client: "Artisan Coffee Co.",
+        timeline: "4 weeks",
+        services: ["Brand Strategy", "Visual Identity", "Packaging Design"],
+        overview: [
+            "A comprehensive brand identity system for a specialty coffee shop focused on sustainable, ethically sourced coffee beans.",
+            "The project included logo design, packaging, signage, and marketing materials that reflect the brand's commitment to quality and sustainability."
+        ],
+        process: [
+            "Beginning with extensive market research and competitor analysis, we developed a unique positioning for the brand in the crowded coffee market.",
+            "The visual identity was designed to communicate authenticity and craftsmanship, with a color palette inspired by the coffee-making process."
+        ]
+    },
+    {
+        id: 5,
+        title: "Nexus Tech",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Brand identity system",
+        client: "Nexus Technologies",
+        timeline: "10 weeks",
+        services: ["Brand Strategy", "Visual Identity", "Guidelines"],
+        overview: [
+            "A comprehensive rebrand for a technology startup, creating a distinctive and scalable visual identity system.",
+            "The project included logo design, visual language development, and extensive brand guidelines to ensure consistent application."
+        ],
+        process: [
+            "We conducted stakeholder interviews and competitive analysis to develop a strategic foundation for the visual identity.",
+            "The resulting system was designed to work effectively across digital platforms, physical environments, and product interfaces."
+        ]
+    },
+    {
+        id: 9,
+        title: "Elevation Inc.",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Corporate identity package",
+        client: "Elevation Inc.",
+        timeline: "12 weeks",
+        services: ["Brand Strategy", "Corporate Identity", "Guidelines"],
+        overview: [
+            "A complete corporate identity redesign for a management consulting firm, aiming to position them as forward-thinking industry leaders.",
+            "The project included logo design, stationery, digital templates, and comprehensive brand guidelines."
+        ],
+        process: [
+            "We began with executive workshops to define core brand values and positioning strategy before developing visual concepts.",
+            "The final identity system balanced professionalism with modern design sensibilities, featuring a flexible color system that could adapt to different business divisions."
+        ]
+    },
+    {
+        id: 11,
+        title: "Eco Essentials",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1584632810710-0c55d0f16d5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Sustainable product branding",
+        client: "Eco Essentials",
+        timeline: "6 weeks",
+        services: ["Brand Strategy", "Packaging", "Logo Design"],
+        overview: [
+            "A brand identity for an eco-friendly household products company focusing on zero-waste packaging and sustainable materials.",
+            "The branding needed to communicate environmental consciousness while maintaining a premium market position."
+        ],
+        process: [
+            "I created a clean, minimalist visual system with earth tones and natural textures to reflect the brand's environmental values.",
+            "The packaging design utilized recycled materials with minimal ink coverage to reduce environmental impact."
+        ]
+    },
+    {
+        id: 12,
+        title: "Fusion Restaurant",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Restaurant brand identity",
+        client: "Fusion Bistro",
+        timeline: "8 weeks",
+        services: ["Logo Design", "Menu Design", "Environmental Graphics"],
+        overview: [
+            "A complete brand identity for an upscale fusion restaurant combining Asian and Mediterranean cuisines.",
+            "The project encompassed logo, menus, signage, interior graphics, and marketing materials to create a cohesive dining experience."
+        ],
+        process: [
+            "The brand identity drew inspiration from both culinary traditions, merging visual elements from both cultures in a contemporary way.",
+            "The color palette features rich, spice-inspired tones that evoke the restaurant's flavor profiles and culinary approach."
+        ]
+    },
+    {
+        id: 13,
+        title: "Summit Athletics",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Sports brand identity",
+        client: "Summit Sports",
+        timeline: "10 weeks",
+        services: ["Brand Identity", "Apparel Design", "Marketing Materials"],
+        overview: [
+            "A dynamic brand identity for a premium athletic wear company focused on mountain sports and outdoor activities.",
+            "The branding needed to convey performance, durability, and a connection to nature while appealing to serious outdoor enthusiasts."
+        ],
+        process: [
+            "The identity system utilizes bold typography and a distinctive logo mark that can be effectively applied across various substrates and environments.",
+            "The visual language incorporates topographic patterns inspired by mountain terrains, reflecting the brand's connection to outdoor adventure."
+        ]
+    },
+    {
+        id: 14,
+        title: "Midnight Vinyl",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Record label branding",
+        client: "Midnight Records",
+        timeline: "6 weeks",
+        services: ["Brand Identity", "Album Cover Templates", "Merchandise Design"],
+        overview: [
+            "A striking visual identity for an independent record label specializing in electronic and ambient music.",
+            "The branding needed to feel contemporary and distinctive while resonating with music enthusiasts and collectors."
+        ],
+        process: [
+            "The visual system incorporates geometric patterns and sound wave visualizations, creating an identity that feels both analog and digital.",
+            "The flexible design system allows for artist customization while maintaining brand recognition across releases and merchandise."
+        ]
+    },
+    {
+        id: 15,
+        title: "Urban Botanics",
+        category: "branding",
+        thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Plant shop branding",
+        client: "Urban Botanics",
+        timeline: "5 weeks",
+        services: ["Brand Identity", "Packaging", "Retail Experience"],
+        overview: [
+            "A fresh brand identity for a modern urban plant shop targeting apartment dwellers and office spaces.",
+            "The branding emphasizes the healing and aesthetic benefits of bringing nature indoors in urban environments."
+        ],
+        process: [
+            "The identity combines clean, modern typography with botanical illustrations and a verdant color palette.",
+            "The packaging system was designed with sustainable materials to align with the brand's environmental values."
+        ]
+    },
+    
+    // ILLUSTRATION PROJECTS (7-8 projects)
+    {
+        id: 2,
+        title: "Abstract Visions",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Digital illustration series",
+        client: "Gallery XYZ",
+        timeline: "8 weeks",
+        services: ["Digital Illustration", "Art Direction", "Exhibition Design"],
+        overview: [
+            "A series of abstract digital illustrations exploring themes of human consciousness and perception.",
+            "The project was featured in a solo exhibition and later published as a limited edition art book."
+        ],
+        process: [
+            "Each illustration began as a traditional sketch before being digitized and refined using various digital painting techniques.",
+            "The color theory behind the series was carefully developed to evoke specific emotional responses from viewers."
+        ]
+    },
+    {
+        id: 6,
+        title: "Fantasia",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Character design collection",
+        client: "Indie Game Studio",
+        timeline: "16 weeks",
+        services: ["Character Design", "Concept Art", "Style Development"],
+        overview: [
+            "A collection of character designs for an indie fantasy game, including main characters, supporting cast, and antagonists.",
+            "Each character was designed with a distinct personality and backstory, while maintaining a cohesive visual style across the collection."
+        ],
+        process: [
+            "The design process began with extensive research into fantasy archetypes and visual references to inform the unique direction.",
+            "Each character went through multiple iterations, from rough sketches to final colored illustrations with detailed costume elements."
+        ]
+    },
+    {
+        id: 16,
+        title: "Future Cities",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Sci-fi concept art",
+        client: "Sci-Fi Publishing House",
+        timeline: "12 weeks",
+        services: ["Digital Illustration", "Concept Development", "Book Cover Design"],
+        overview: [
+            "A series of detailed sci-fi illustrations depicting futuristic urban landscapes for a science fiction anthology.",
+            "Each illustration represents a different vision of how human cities might evolve over the next century."
+        ],
+        process: [
+            "The illustrations combine architectural precision with imaginative technological elements to create believable future environments.",
+            "Each city concept was developed with attention to sociological and environmental factors that might shape urban development."
+        ]
+    },
+    {
+        id: 17,
+        title: "Mythology Reimagined",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1618331833071-ce81bd50d300?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Cultural mythology illustrations",
+        client: "Cultural Heritage Foundation",
+        timeline: "20 weeks",
+        services: ["Character Design", "Digital Painting", "Editorial Illustration"],
+        overview: [
+            "A collection of illustrations reimagining mythological figures from various world cultures through a contemporary lens.",
+            "The project aimed to preserve cultural storytelling while making ancient myths accessible to modern audiences."
+        ],
+        process: [
+            "Each figure required extensive research into cultural symbolism and traditional artistic representations.",
+            "The illustrations balance historical accuracy with contemporary artistic techniques to create a bridge between past and present."
+        ]
+    },
+    {
+        id: 18,
+        title: "Botanical Studies",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1582454905153-257b5bcc5ef7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Scientific illustration series",
+        client: "Natural History Publication",
+        timeline: "16 weeks",
+        services: ["Scientific Illustration", "Botanical Art", "Print Design"],
+        overview: [
+            "A collection of detailed botanical illustrations combining scientific accuracy with artistic expression.",
+            "The illustrations were commissioned for a high-end publication on rare and endangered plant species."
+        ],
+        process: [
+            "Each illustration began with meticulous observation and research, working from live specimens and photographic references.",
+            "The final pieces merged traditional botanical illustration techniques with contemporary composition approaches."
+        ]
+    },
+    {
+        id: 19,
+        title: "Editorial Series",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Magazine illustration series",
+        client: "Quarterly Magazine",
+        timeline: "Ongoing",
+        services: ["Editorial Illustration", "Conceptual Art", "Publishing"],
+        overview: [
+            "A continuing series of conceptual illustrations for feature articles in a quarterly cultural magazine.",
+            "Each illustration needs to distill complex topics into visually engaging and thought-provoking images."
+        ],
+        process: [
+            "The process involves close collaboration with editors to understand article themes before developing conceptual approaches.",
+            "The illustrations use metaphor and symbolism to communicate abstract ideas in a visually accessible way."
+        ]
+    },
+    {
+        id: 20,
+        title: "Children's Book",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1594048882716-c88cbdfd6a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Children's book illustrations",
+        client: "Harper Publishing",
+        timeline: "14 weeks",
+        services: ["Character Design", "Book Illustration", "Visual Storytelling"],
+        overview: [
+            "A complete illustration package for a children's picture book about exploring emotions and empathy.",
+            "The illustrations needed to appeal to children while also engaging parents with deeper visual storytelling."
+        ],
+        process: [
+            "The character development phase focused on creating expressive, relatable characters that could clearly convey emotional states.",
+            "Each spread was carefully composed to support the narrative flow while creating immersive scenes for young readers."
+        ]
+    },
+    {
+        id: 21,
+        title: "Album Art Collection",
+        category: "illustration",
+        thumbnail: "https://images.unsplash.com/photo-1627843240167-b1f9a9f79580?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Music album cover art",
+        client: "Various Music Artists",
+        timeline: "Ongoing",
+        services: ["Album Cover Design", "Conceptual Illustration", "Typography Integration"],
+        overview: [
+            "A collection of album cover illustrations for various independent musicians across different genres.",
+            "Each cover needs to visually represent the music's emotional landscape while creating a strong visual identity."
+        ],
+        process: [
+            "The process begins with deep listening sessions to understand the musical themes, emotions, and artist vision.",
+            "The final illustrations integrate seamlessly with typography and translate effectively across physical and digital formats."
+        ]
+    },
+    
+    // WEB DESIGN PROJECTS (7-8 projects)
+    {
+        id: 3,
+        title: "Moderno Shop",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "E-commerce website design",
+        client: "Moderno Furniture",
+        timeline: "12 weeks",
+        services: ["UX/UI Design", "Interaction Design", "Prototyping"],
+        overview: [
+            "A complete redesign of an e-commerce platform for a high-end furniture retailer, focusing on user experience and conversion optimization.",
+            "The project included user research, wireframing, prototyping, and final UI design for all key customer journeys."
+        ],
+        process: [
+            "We began with extensive user interviews and usability testing of the existing site to identify pain points and opportunities.",
+            "The new design featured an intuitive navigation system, enhanced product visualization, and a streamlined checkout process."
+        ]
+    },
+    {
+        id: 7,
+        title: "Wanderlust",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Travel app UX/UI design",
+        client: "Wanderlust Travel",
+        timeline: "8 weeks",
+        services: ["UX Research", "UI Design", "Prototyping"],
+        overview: [
+            "A mobile application designed for independent travelers to discover authentic local experiences and plan personalized itineraries.",
+            "The app features an AI-powered recommendation system, interactive maps, and a social component for sharing experiences."
+        ],
+        process: [
+            "We conducted extensive user research to understand traveler pain points and developed user personas to guide the design process.",
+            "The interface was designed to be intuitive and visually inspiring, with special attention to providing contextual information at the right moment."
+        ]
+    },
+    {
+        id: 22,
+        title: "Finance Dashboard",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Financial management platform",
+        client: "WealthWise Technologies",
+        timeline: "14 weeks",
+        services: ["UX/UI Design", "Data Visualization", "Dashboard Design"],
+        overview: [
+            "A comprehensive web application for personal financial management featuring investment tracking, budget planning, and financial insights.",
+            "The platform needed to present complex financial data in an accessible and actionable way for non-expert users."
+        ],
+        process: [
+            "I conducted financial literacy research to understand how users at different knowledge levels interpret financial information.",
+            "The final design uses progressive disclosure techniques to make complex data accessible while offering depth for advanced users."
+        ]
+    },
+    {
+        id: 23,
+        title: "Health & Wellness",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1593810450967-f9c39cc54fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Fitness application design",
+        client: "Vital Health",
+        timeline: "10 weeks",
+        services: ["UX Design", "UI Design", "Interaction Design"],
+        overview: [
+            "A mobile application for personalized fitness and nutrition planning with progress tracking and community features.",
+            "The app needed to accommodate users at various fitness levels while providing a motivational and supportive experience."
+        ],
+        process: [
+            "The design process began with extensive user research to understand fitness journeys and motivation factors.",
+            "The interface uses gamification elements and positive reinforcement to encourage consistent engagement with fitness goals."
+        ]
+    },
+    {
+        id: 24,
+        title: "Creative Portfolio",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Portfolio website system",
+        client: "Design Academy",
+        timeline: "8 weeks",
+        services: ["Website Design", "Design System", "CMS Integration"],
+        overview: [
+            "A customizable portfolio website system for design graduates to showcase their work and professional identities.",
+            "The system needed to be flexible enough to accommodate various design disciplines while remaining user-friendly."
+        ],
+        process: [
+            "I developed a modular design system that allows for personal expression while maintaining professional presentation standards.",
+            "The backend CMS was carefully designed to make content management intuitive for designers with limited technical experience."
+        ]
+    },
+    {
+        id: 25,
+        title: "News Platform",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Digital news experience",
+        client: "Global News Network",
+        timeline: "16 weeks",
+        services: ["Information Architecture", "Content Strategy", "UX/UI Design"],
+        overview: [
+            "A complete redesign of a major news platform focusing on content discovery, readability, and subscriber engagement.",
+            "The project addressed the challenges of presenting diverse content types while maintaining editorial hierarchy."
+        ],
+        process: [
+            "The design process involved extensive content auditing and user testing to balance breaking news with in-depth reporting.",
+            "The final design introduced adaptive layouts that respond not only to device size but also to content type and user reading patterns."
+        ]
+    },
+    {
+        id: 26,
+        title: "Learning Management",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Educational platform design",
+        client: "EduConnect",
+        timeline: "12 weeks",
+        services: ["UX Research", "UI Design", "Educational UX"],
+        overview: [
+            "A learning management system designed to enhance student engagement and instructor effectiveness in online education.",
+            "The platform features interactive course materials, progress tracking, and collaborative learning tools."
+        ],
+        process: [
+            "The design process included observational research with students and instructors to identify pain points in existing systems.",
+            "The interface prioritizes reducing cognitive load during learning activities while providing comprehensive progress insights."
+        ]
+    },
+    {
+        id: 27,
+        title: "Art Gallery Virtual Space",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1594732832278-abd644401426?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Virtual exhibition platform",
+        client: "Contemporary Arts Foundation",
+        timeline: "10 weeks",
+        services: ["Interactive Design", "3D Space Design", "Virtual Experience"],
+        overview: [
+            "A virtual exhibition space allowing art galleries to create immersive online exhibitions during pandemic restrictions.",
+            "The platform enables curators to design spatial experiences while providing visitors with exploratory navigation."
+        ],
+        process: [
+            "The design balances realistic spatial representation with intuitive digital interfaces for artwork information.",
+            "User testing focused on finding the right balance between guided experiences and free exploration for visitors of varying technical abilities."
+        ]
+    },
+    {
+        id: 28,
+        title: "Restaurant Ordering System",
+        category: "web",
+        thumbnail: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Restaurant digital experience",
+        client: "Culinary Group",
+        timeline: "8 weeks",
+        services: ["Service Design", "UI/UX Design", "Mobile App Design"],
+        overview: [
+            "A digital ordering system for a restaurant chain enabling tableside ordering, kitchen management, and payment processing.",
+            "The system needed to improve operational efficiency while enhancing the dining experience for customers."
+        ],
+        process: [
+            "The design process included on-site observation of restaurant operations to identify service bottlenecks and opportunities.",
+            "The final solution integrates seamlessly with the dining experience while dramatically improving order accuracy and service speed."
+        ]
+    },
+    
+    // YOUTUBE THUMBNAIL PROJECTS (7-8 projects)
+    {
+        id: 4,
+        title: "Gaming Highlights",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "YouTube thumbnail design",
+        client: "GameStream Channel",
+        timeline: "1 week",
+        services: ["Thumbnail Design", "Visual Effects", "Typography"],
+        overview: [
+            "A series of eye-catching YouTube thumbnails for a gaming channel focusing on highlights and gameplay reviews.",
+            "Each thumbnail was designed to drive higher click-through rates while maintaining brand consistency across the channel."
+        ],
+        process: [
+            "I analyzed top-performing gaming thumbnails to identify visual patterns that attract viewers in the competitive gaming niche.",
+            "The designs feature bold typography, strategic color contrast, and dynamic composition to stand out in YouTube search results and recommendations."
+        ]
+    },
+    {
+        id: 8,
+        title: "Tech Reviews",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "YouTube thumbnail series",
+        client: "TechInsider Channel",
+        timeline: "Ongoing",
+        services: ["Thumbnail Design", "Brand Consistency", "Visual Composition"],
+        overview: [
+            "A consistent series of YouTube thumbnails for technology review videos that help increase viewer engagement and channel recognition.",
+            "Each thumbnail incorporates product imagery, engaging text overlays, and visual elements that drive higher CTRs for the tech review channel."
+        ],
+        process: [
+            "I developed a modular template system that allows for quick creation of new thumbnails while maintaining visual consistency across the channel.",
+            "The designs use color psychology and strategic placement of text and product images to create standout thumbnails in competitive tech niches."
+        ]
+    },
+    {
+        id: 10,
+        title: "Cooking Tutorials",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "YouTube cooking channel thumbnails",
+        client: "HomeCooking Channel",
+        timeline: "2 weeks",
+        services: ["Thumbnail Design", "Food Photography", "Typography"],
+        overview: [
+            "A series of attention-grabbing YouTube thumbnails for a cooking tutorial channel that significantly improved click-through rates.",
+            "Each thumbnail highlights the finished dish in an appetizing way while incorporating clear, readable text that communicates the recipe name."
+        ],
+        process: [
+            "I developed a visually consistent yet flexible template system that works across different recipe categories and food types.",
+            "The thumbnail designs feature bright, high-contrast food photography with strategic text placement that remains legible at small sizes on mobile devices."
+        ]
+    },
+    {
+        id: 29,
+        title: "Fitness Workouts",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Fitness channel thumbnails",
+        client: "FitLife Channel",
+        timeline: "4 weeks",
+        services: ["Thumbnail Design", "Brand Development", "Visual Strategy"],
+        overview: [
+            "A set of energetic thumbnails for a fitness YouTube channel featuring workout routines, nutrition advice, and wellness tips.",
+            "The thumbnails needed to convey the intensity of workouts while remaining approachable for beginners."
+        ],
+        process: [
+            "I developed a color-coding system to distinguish workout types and difficulty levels at a glance.",
+            "Each thumbnail uses dynamic action shots with overlaid text that clearly communicates the workout focus and duration."
+        ]
+    },
+    {
+        id: 30,
+        title: "Educational Series",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Educational video thumbnails",
+        client: "Learn Quick Academy",
+        timeline: "Ongoing",
+        services: ["Thumbnail Design", "Information Design", "Brand Consistency"],
+        overview: [
+            "A comprehensive thumbnail system for an educational channel covering topics from mathematics to history and science.",
+            "The thumbnails needed to organize complex information into visually engaging previews that attract the right audience."
+        ],
+        process: [
+            "I created a modular design system with subject-specific color coding and iconography to help viewers identify relevant content.",
+            "The design approach balances academic credibility with visual appeal to attract students while signaling educational value."
+        ]
+    },
+    {
+        id: 31,
+        title: "Travel Vlogs",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Travel channel thumbnails",
+        client: "Wanderlust Travels",
+        timeline: "6 months",
+        services: ["Thumbnail Design", "Location Photography", "Series Design"],
+        overview: [
+            "An ongoing series of thumbnails for a travel vlog featuring destinations worldwide, local experiences, and travel tips.",
+            "Each thumbnail needed to showcase the location's unique appeal while maintaining channel recognition."
+        ],
+        process: [
+            "The design system incorporates iconic location imagery with consistent branding elements and location typography.",
+            "I developed a template that accommodates both portrait and landscape orientation photography to best showcase each destination."
+        ]
+    },
+    {
+        id: 32,
+        title: "DIY Crafts",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1559854036-2409f22a918a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Craft tutorial thumbnails",
+        client: "Crafty Creator",
+        timeline: "3 months",
+        services: ["Thumbnail Design", "Product Photography", "Graphics"],
+        overview: [
+            "A series of bright, engaging thumbnails for a DIY craft channel featuring project tutorials and creative inspiration.",
+            "The thumbnails needed to showcase the finished projects while also hinting at the creation process."
+        ],
+        process: [
+            "Each thumbnail features a clean, well-lit primary image of the finished craft with complementary graphic elements.",
+            "I developed a consistent layout system that accommodates different project types while maintaining channel branding."
+        ]
+    },
+    {
+        id: 33,
+        title: "Music Lessons",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Music tutorial thumbnails",
+        client: "Music Mentor Channel",
+        timeline: "Ongoing",
+        services: ["Thumbnail Design", "Instrument Photography", "Series Templates"],
+        overview: [
+            "A cohesive set of thumbnails for music lessons covering various instruments, music theory, and performance techniques.",
+            "The thumbnails needed to appeal to students at different skill levels while clearly indicating lesson content."
+        ],
+        process: [
+            "I developed an instrument-specific color scheme and iconography system to help viewers quickly identify relevant lessons.",
+            "The thumbnail designs balance aspirational imagery with clear educational signposting to attract the right audience."
+        ]
+    },
+    {
+        id: 34,
+        title: "Product Reviews",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1564466809058-bf4114d55352?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Review channel thumbnails",
+        client: "Review Everything",
+        timeline: "Ongoing",
+        services: ["Thumbnail Design", "Product Photography", "Graphic Overlays"],
+        overview: [
+            "A versatile thumbnail system for a product review channel covering electronics, household items, and various consumer goods.",
+            "Each thumbnail needs to showcase the product while clearly communicating the verdict or key finding."
+        ],
+        process: [
+            "The design approach utilizes consistent rating indicators and verdict badges that viewers can recognize at a glance.",
+            "Product photography is carefully composed to highlight key features while allowing space for text and graphic elements."
+        ]
+    },
+    {
+        id: 35,
+        title: "Documentary Series",
+        category: "thumbnail",
+        thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        description: "Documentary thumbnails",
+        client: "Discovery Channel",
+        timeline: "8 weeks",
+        services: ["Thumbnail Design", "Photography Selection", "Series Branding"],
+        overview: [
+            "A collection of compelling thumbnails for a documentary series covering historical events, scientific discoveries, and natural phenomena.",
+            "The thumbnails needed to convey the gravity and intrigue of documentary subjects while promising high production values."
+        ],
+        process: [
+            "I selected dramatic, high-impact imagery and paired it with a consistent typography system that functions across varied content.",
+            "The design approach balances journalistic credibility with attention-grabbing visuals to attract serious documentary viewers."
+        ]
+    }
+];
+];
+
+// Education Data
+const educationData = [
+    {
+        degree: "MFA in Graphic Design",
+        institution: "Rhode Island School of Design",
+        icon: "graduation-cap"
+    },
+    {
+        degree: "BFA in Visual Communication",
+        institution: "Parsons School of Design",
+        icon: "graduation-cap"
+    }
+];
+
+// Experience Data
+const experienceData = [
+    {
+        position: "Senior Designer",
+        company: "Artisan Creative",
+        period: "2018-Present",
+        icon: "briefcase"
+    },
+    {
+        position: "YouTube Thumbnail Designer",
+        company: "ContentCreators Studio",
+        period: "2019-Present",
+        icon: "video"
+    },
+    {
+        position: "Visual Designer",
+        company: "Design Studio X",
+        period: "2015-2018",
+        icon: "briefcase"
+    }
+];
+
+// Design Skills Data
+const designSkills = [
+    { name: "Adobe Photoshop", percentage: 95 },
+    { name: "Adobe Illustrator", percentage: 90 },
+    { name: "Figma", percentage: 85 },
+    { name: "Adobe InDesign", percentage: 80 },
+    { name: "Adobe After Effects", percentage: 70 }
+];
+
+// Creative Skills Data
+const creativeSkills = [
+    { name: "Brand Identity", percentage: 95 },
+    { name: "Typography", percentage: 90 },
+    { name: "YouTube Thumbnails", percentage: 88 },
+    { name: "UI/UX Design", percentage: 85 },
+    { name: "Illustration", percentage: 80 },
+    { name: "Motion Graphics", percentage: 75 }
+];
+
+// Social Links Data
+const socialLinks = [
+    {
+        name: "Instagram",
+        url: "https://instagram.com",
+        icon: "instagram"
+    },
+    {
+        name: "Dribbble",
+        url: "https://dribbble.com",
+        icon: "dribbble"
+    },
+    {
+        name: "Behance",
+        url: "https://behance.net",
+        icon: "behance"
+    },
+    {
+        name: "LinkedIn",
+        url: "https://linkedin.com",
+        icon: "linkedin-in"
+    }
+];
+
+// Contact Info Data
+const contactInfo = {
+    email: "hello@janedoe.design",
+    phone: "(123) 456-7890",
+    location: "New York City, USA"
+};
